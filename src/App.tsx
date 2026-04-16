@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { 
   Code2, MessageSquare, Zap, ShieldCheck, 
   Activity, Gauge, Lightbulb, ChevronRight, 
@@ -10,7 +10,6 @@ const CopilotGuide = () => {
   const [activeStep, setActiveStep] = useState(0);
   const [completionsCount, setCompletionsCount] = useState(0);
   const [chatQuota, setChatQuota] = useState(300);
-  const [isTyping, setIsTyping] = useState(false);
 
   // Simulate unlimited completions background animation
   useEffect(() => {
